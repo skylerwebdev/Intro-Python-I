@@ -3,10 +3,21 @@
 # YOUR CODE HERE
 
 # Read a number from the keyboard
-num = input("Enter a number: ")
-num = int(num)
+
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
+import cmd
 
-# YOUR CODE HERE
+
+def is_even(n):
+    if n % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+
+
+while True:
+    num = input("Enter a number: ")
+    num = int(num)
+    is_even(num)
 
